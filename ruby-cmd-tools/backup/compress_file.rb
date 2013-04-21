@@ -1,5 +1,6 @@
 #encoding:utf-8
 
+$LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirname(__FILE__))
 require 'zip/zip'
 require 'time'
 require "iconv"
@@ -34,7 +35,9 @@ class ZipUtil
       if File.directory?(file_path)
         #建立目录
         #如果省略下一行代码，则当目录为空时，此目录将不会显示在压缩文件中
-        zip.mkdir(file_path)
+        if not zip.find_entry(file_path)
+          zip.mkdir(file_path)
+        end
         #puts "建立目录#{file_path}"
         Dir.foreach(file_path) do |filename|
         #递归调用add_file方法
@@ -82,4 +85,4 @@ def run(argv)
   ZipUtil.add_to_zip_file(argv[0], argv[1, argv.length-1])
 end
 
-run(ARGV)
+#run(ARGV)
