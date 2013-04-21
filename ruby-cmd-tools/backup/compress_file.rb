@@ -68,8 +68,8 @@ end
 def encode_string(s)
   from = "UTF-8"
   to = "GBK"
-  #return Iconv.iconv(to, from, s)[0]
   #return s.encode!(to, from)
+  #return Iconv.iconv(to, from, s)[0]
   return s
 end
   
