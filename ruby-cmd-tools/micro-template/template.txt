@@ -1,0 +1,162 @@
+
+--创建临时表取出最大单据号和串码
+create table tmp_{date.gsub(/-/, '')}_vbarcodemaxcode as (select max(h.vbillcode) vbillcode,
+ bbc.vbarcode vbarcode
+from ic_general_bbc bbc  
+inner join ic_general_b b
+on bbc.cgeneralbid=b.cgeneralbid 
+inner join ic_general_h h  
+on h.cgeneralhid=b.cgeneralhid 
+where {
+  if date2 == nil or date2 == '' or date2.length == 0 then
+    "h.dbilldate='" + date + "'"
+  else
+    "h.dbilldate>='" + date + "' and h.dbilldate<='" + date2 + "'"
+  end
+}
+and b.cbodybilltypecode ='45' 
+and nvl(b.dr,0)=0 and nvl(bbc.dr,0)=0 and nvl(h.dr,0)=0 
+group by bbc.vbarcode); 
+
+
+--将指定日期的串码放到主表中
+insert into bd_vbarcodemanage_h(invpinpai,invtype,invname,invcode,vbarcode,cgeneralbbcid) 
+(select distinct bi.invpinpai      invpinpai,
+                bi.invtype        invtype,
+                bi.invname        invname,
+                bi.invcode        invcode,
+                bbc.vbarcode      vbarcode,
+                bbc.cgeneralbbcid cgeneralbbcid
+  from ic_general_h h
+  join ic_general_b b
+    on h.cgeneralhid = b.cgeneralhid
+  join ic_general_bbc bbc
+    on b.cgeneralbid = bbc.cgeneralbid
+    
+  join tmp_{date.gsub(/-/, '')}_vbarcodemaxcode bb
+    on bb.vbarcode = bbc.vbarcode
+   and bb.vbillcode = h.vbillcode
+  join bd_invbasdoc bi
+    on b.cinvbasid = bi.pk_invbasdoc
+ where {
+  if date2 == nil or date2 == '' or date2.length == 0 then
+    "h.dbilldate='" + date + "'"
+  else
+    "h.dbilldate>='" + date + "' and h.dbilldate<='" + date2 + "'"
+  end
+}
+   and h.cbilltypecode = '45'
+   and nvl(b.dr, 0) = 0
+   and nvl(bbc.dr, 0) = 0
+   and nvl(bi.dr, 0) = 0
+   and nvl(h.dr, 0) = 0
+   and bbc.vbarcode not in
+       ('863994011439353', '358059045491846', '358059043654478')
+   and bbc.vbarcode is not null
+);
+				
+insert into /*+ parallel(t0,8) */  bd_vbarcodemanage_b
+  (cgeneralbbcid,
+   vbarcode,
+   dbizdate,
+   warehouseprice,
+   outboundprice,
+   unitname,
+   unitcode,
+   bodyname,
+   bodycode,
+   storname,
+   storcode,
+   businame,
+   busicode,
+   custname,
+   custcode,
+   custname1,
+   custcode1,
+   freplenishflag,
+   tmaketime,
+   taccounttime,
+   cbodybilltypecode) (
+select /*+ parallel(t1,8) */
+distinct bbc.cgeneralbbcid cgeneralbbcid,
+         bbc.vbarcode vbarcode,
+         b.dbizdate dbizdate,
+         (case
+           when pb.csourcebillrowid is not null then
+            pb.norgnettaxprice
+           else
+            pob.norgtaxprice
+         end) warehouseprice,
+         (case
+           when sa.cupsourcebillbodyid is not null then
+            sa.noriginalcurtaxnetprice
+           else
+            ssb.noriginalcurtaxprice
+         end) outboundprice,
+         corp.unitname unitname,
+         corp.unitcode unitcode,
+         bc.bodyname bodyname,
+         bc.bodycode bodycode,
+         bs.storname storname,
+         bs.storcode storcode,
+         bu.businame businame,
+         bu.busicode busicode,
+         bcu.custname custname,
+         bcu.custcode custcode,
+         bcu2.custname custname1,
+         bcu2.custcode custcode1,
+         h.freplenishflag freplenishflag,
+         h.tmaketime tmaketime,
+         h.taccounttime taccounttime,
+         b.cbodybilltypecode cbodybilltypecode
+  from ic_general_h h
+  join ic_general_b b
+    on h.cgeneralhid = b.cgeneralhid
+  join ic_general_bbc bbc
+    on b.cgeneralbid = bbc.cgeneralbid
+    
+  join bd_busitype bu
+    on h.cbiztype = bu.pk_busitype
+  left join bd_cubasdoc bcu2
+    on h.pk_cubasdocc = bcu2.pk_cubasdoc
+  left join bd_cubasdoc bcu
+    on h.pk_cubasdoc = bcu.pk_cubasdoc
+  join bd_corp corp
+    on h.pk_corp = corp.pk_corp
+  join bd_stordoc bs
+    on h.cwarehouseid = bs.pk_stordoc
+    
+  left join po_order_b pob
+    on pob.corder_bid = b.csourcebillbid
+  left join so_saleorder_b ssb
+    on ssb.corder_bid = b.csourcebillbid
+  join bd_invbasdoc bi
+    on b.cinvbasid = bi.pk_invbasdoc
+  join bd_calbody bc
+    on b.pk_bodycalbody = bc.pk_calbody
+
+  left join tmp_po_invoice_b pb
+    on pb.csourcebillrowid = b.cgeneralbid
+  left join tmp_so_saleinvoice_b sa
+    on sa.cupsourcebillbodyid = b.cgeneralbid
+
+ where {
+  if date2 == nil or date2 == '' or date2.length == 0 then
+    "h.dbilldate='" + date + "'"
+  else
+    "h.dbilldate>='" + date + "' and h.dbilldate<='" + date2 + "'"
+  end
+}
+   and h.cbilltypecode in ('4C', '4I', '4Y', '45', '4A', '4E')
+   and nvl(bi.dr, 0) = 0
+   and nvl(bc.dr, 0) = 0
+   and nvl(bc.dr, 0) = 0
+   and nvl(bu.dr, 0) = 0
+   and nvl(bcu.dr, 0) = 0
+   and nvl(corp.dr, 0) = 0
+   and nvl(bcu2.dr, 0) = 0
+);
+	 
+commit;
+
+drop table tmp_{date.gsub(/-/, '')}_vbarcodemaxcode;
