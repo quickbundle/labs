@@ -1,6 +1,6 @@
-                              ==Quickbundle Inc.==
+                                   == Mike Bai ==
 
-                           Volume 0x01, Issue 0x01
+                              Volume 0x01, Issue 0x01
 
 [-]==========================================================================[-]
 
@@ -11,40 +11,49 @@
          (        \ \  `. /  /_\  /__/   /  / /.__     \.'         )
           \  _____/  \___`.     )    \  :  /  \ `.  \   \_______  /
            \|    /___/ /___/.__/__/\__\___/\_____/_._\____\     |/
-                           `-' pHRACK#6o          `-'
+                           `-' MyCrypt#1          `-'
 
 [-]==========================================================================[-]
-Old School: [1] 
 
-  NAME                         CN_NAME                  VALUE
------------------------------+------------------------+------------------------
+Old School: [1.required] 
+  NAME                        AUTHOR                 CN_NAME
+----------------------------+----------------------+----------------------------
 * Code: The Hidden Language of Computer Hardware and Software
-                               编码 隐匿在计算机软硬件...   CS Base Architect
-* Computer Networks 4th        计算机网络                 Network Classic
-* Modern Cryptography: Theory and Practice
-                               现代密码学理论与实践         Cryptography Tutorial
-* Cryptography Engineering                              Cryptography Classic
-* The C Programming Language   C程序设计语言
-* Think in C++                 C++编程思想
-* Design Pattern               设计模式                   
-* Operation System Concepts    操作系统概念               
+                              Charles Petzold        编码:隐匿在计算机软硬件背后的语言   
+* Computer Networks 4th       Andrew S.Tanenbaum     计算机网络
+* Cryptography Engineering    Niels Ferguson
+* The C Programming Language  Brian W.Kernighan...   C程序设计语言
+* Think in C++                Bruce Echel...         C++编程思想
+* Design Pattern              Erich Gamma...         设计模式                   
+* Operation System Concepts   Peter Baer Galvin      操作系统概念               
 * Structure and Interpretation of Computer Programs
-                               计算机程序的构造与解释
-* Compilers                    编译原理
-* Linux Kernel Development     Linux内核设计与实现
-* Domain-Specific Languages    领域特定语言
-* Introduction to Algorithms   算法导论
-* Modern Operating Systems     现代操作系统
-* Data Mining                  数据挖掘
-*                              深入理解Java虚拟机
-* Refactoring                  重构
-* Analysis Pattern             分析模式
+                              Harold Abelson...      计算机程序的构造与解释
+* Compilers                   Alfred V.AHO           编译原理
+* Linux Kernel Development    Robert Love            Linux内核设计与实现
+* Domain-Specific Languages   Martin Flower          领域特定语言
+* Introduction to Algorithms  Thomas H.Cormen...     算法导论
+* Modern Operating Systems    Andrew S.Tanenbaum     现代操作系统
 * Discrete Mathematics and Its Applications
-                               离散数学及其应用
+                              Kenneth H.Rosen        离散数学及其应用
 * The Art of Computer Programming
-                               计算机程序设计艺术           Donald E. Knuth
-
+                              Donald E. Knuth        计算机程序设计艺术
 
 ..we came a long way...
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
+
+Old School: [2.optional] 
+  NAME                        AUTHOR                 CN_NAME
+----------------------------+----------------------+----------------------------
+* The Art of Computer Programming
+                              Donald E. Knuth        计算机程序设计艺术
+* Modern Cryptography: Theory and Practice
+                              Wenbo Mao              现代密码学理论与实践
+* Data Mining                 Lan H.Witten...        数据挖掘
+*                             周志明                  深入理解Java虚拟机
+* Refactoring                 Martin Flower          重构
+* Analysis Pattern            Martin Flower          分析模式
+*                             许式伟                  Go语言编程
+
+..to be continued...
+--------------------------------------------------------------------------------
