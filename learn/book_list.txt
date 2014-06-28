@@ -1,21 +1,50 @@
-编码 隐匿在计算机软硬件背后的语言
-计算机网络
-现代密码学理论与实践
-Go语言程序设计
-C程序设计指南
-C++编程思想
-设计模式
-操作系统概念
-计算机程序的构造与解释
-编译原理
-Linux内核设计与实现
-DSL领域驱动语言
-算法导论
-Don't make me think
-数据挖掘导论
-现代操作系统
-深入理解Java虚拟机
-重构
-分析模式
-离散数学及其应用
-计算机程序设计艺术 卷1
+                              ==Quickbundle Inc.==
+
+                           Volume 0x01, Issue 0x01
+
+[-]==========================================================================[-]
+
+               _.                      _
+              *  `.__________________.'_'._       ___ ___
+           /|_____/`._____:    /_____     `._____/  //  /_______|\
+          /      \  _`._  \   //   _ \____  `.     //  /  .*      \
+         (        \ \  `. /  /_\  /__/   /  / /.__     \.'         )
+          \  _____/  \___`.     )    \  :  /  \ `.  \   \_______  /
+           \|    /___/ /___/.__/__/\__\___/\_____/_._\____\     |/
+                           `-' pHRACK#6o          `-'
+
+[-]==========================================================================[-]
+Old School: [1] 
+
+  NAME                         CN_NAME                  VALUE
+-----------------------------+------------------------+------------------------
+* Code: The Hidden Language of Computer Hardware and Software
+                               编码 隐匿在计算机软硬件...   CS Base Architect
+* Computer Networks 4th        计算机网络                 Network Classic
+* Modern Cryptography: Theory and Practice
+                               现代密码学理论与实践         Cryptography Tutorial
+* Cryptography Engineering                              Cryptography Classic
+* The C Programming Language   C程序设计语言
+* Think in C++                 C++编程思想
+* Design Pattern               设计模式                   
+* Operation System Concepts    操作系统概念               
+* Structure and Interpretation of Computer Programs
+                               计算机程序的构造与解释
+* Compilers                    编译原理
+* Linux Kernel Development     Linux内核设计与实现
+* Domain-Specific Languages    领域特定语言
+* Introduction to Algorithms   算法导论
+* Modern Operating Systems     现代操作系统
+* Data Mining                  数据挖掘
+*                              深入理解Java虚拟机
+* Refactoring                  重构
+* Analysis Pattern             分析模式
+* Discrete Mathematics and Its Applications
+                               离散数学及其应用
+* The Art of Computer Programming
+                               计算机程序设计艺术           Donald E. Knuth
+
+
+..we came a long way...
+-------------------------------------------------------------------------------
+
