@@ -37,6 +37,7 @@ Old School: [1.required]
 * Modern Operating Systems    Andrew S.Tanenbaum     现代操作系统
 * Discrete Mathematics and Its Applications
                               Kenneth H.Rosen        离散数学及其应用
+***Phrack***
 
 ..we came a long way...
 --------------------------------------------------------------------------------
