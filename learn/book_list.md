@@ -18,7 +18,7 @@
 # Old School: [1.required] #
   NAME                        AUTHOR                 CN_NAME
 ----------------------------+----------------------+----------------------------
-## CS Basic ##
+### CS Basic ###
 * Code: The Hidden Language of Computer Hardware and Software
                               Charles Petzold        编码:隐匿在计算机软硬件背后的语言   
 * Computer Networks 4th       Andrew S.Tanenbaum     计算机网络
@@ -31,7 +31,7 @@
 * Discrete Mathematics and Its Applications
                               Kenneth H.Rosen        离散数学及其应用
 
-## OS & Language & Engineering ##
+### OS & Language & Engineering ###
 * The C Programming Language  Brian W.Kernighan...   C程序设计语言
 * Think in C++                Bruce Echel...         C++编程思想
 * Understanding the Linux Kernel
@@ -40,7 +40,7 @@
 * Design Pattern              Erich Gamma...         设计模式
 * Domain-Specific Languages   Martin Flower          领域特定语言
 
-## Database ##
+### Database ###
 * Transaction Processing: Concepts and Techniques
                               Jim Gray, Andreas Reuter
 * Transactional Information Systems: Theory, Algorithms,
@@ -48,7 +48,7 @@
                               Gerhard Weikum, Gottfried Vossen
 * Database Management Systems Raghu Ramakrishnan...
 
-## Security ##
+### Security ###
 * Cryptography Engineering    Niels Ferguson
 * Phrack
 
@@ -59,11 +59,11 @@
 # Old School: [2.optional] #
   NAME                        AUTHOR                 CN_NAME
 ----------------------------+----------------------+----------------------------
-## CS Basic ##
+### CS Basic ###
 * The Art of Computer Programming
                               Donald E. Knuth        计算机程序设计艺术
 
-## Engineering ##
+### Engineering ###
 * Hacking: The Art of Exploitation, 2nd Edition 
                               Jon Erickson
 * A Bug Hunter’s Diary        TOBIAS KLEIN
