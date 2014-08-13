@@ -43,7 +43,7 @@
 ## Database ##
 * Transaction Processing: Concepts and Techniques
                               Jim Gray, Andreas Reuter
-* Transactional Information Systems: Theory, Algorithms,\
+* Transactional Information Systems: Theory, Algorithms,
      and the Practice of Concurrency Control and Recovery 
                               Gerhard Weikum, Gottfried Vossen
 * Database Management Systems Raghu Ramakrishnan...
@@ -59,6 +59,11 @@
 # Old School: [2.optional] #
   NAME                        AUTHOR                 CN_NAME
 ----------------------------+----------------------+----------------------------
+## CS Basic ##
+* The Art of Computer Programming
+                              Donald E. Knuth        计算机程序设计艺术
+
+## Engineering ##
 * Hacking: The Art of Exploitation, 2nd Edition 
                               Jon Erickson
 * A Bug Hunter’s Diary        TOBIAS KLEIN
@@ -73,8 +78,6 @@
 * APPLIED CRYPTOGRAPHY 2nd edition
                               Bruce Schneier
 * The Art of Intrusion        Kevin Mitnick
-* The Art of Computer Programming
-                              Donald E. Knuth        计算机程序设计艺术
 * Modern Cryptography: Theory and Practice
                               Wenbo Mao              现代密码学理论与实践
 * Data Mining                 Lan H.Witten...        数据挖掘
