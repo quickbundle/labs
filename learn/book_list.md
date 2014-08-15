@@ -16,37 +16,28 @@
 [-]==========================================================================[-]
 
 # Old School: [1.required] #
-  NAME            |            AUTHOR          |       CN_NAME
-----------------------------|----------------------|----------------------------
-### CS Basic ### | |
-* Code: The Hidden Language of Computer Hardware and Software 
-| Charles Petzold | 编码:隐匿在计算机软硬件背后的语言   
-* Computer Networks 4th       Andrew S.Tanenbaum     计算机网络
-* Operation System Concepts   Peter Baer Galvin      操作系统概念               
-* Structure and Interpretation of Computer Programs
-                              Harold Abelson...      计算机程序的构造与解释
-* Compilers                   Alfred V.AHO           编译原理
-* Introduction to Algorithms  Thomas H.Cormen...     算法导论
-* Modern Operating Systems    Andrew S.Tanenbaum     现代操作系统
-* Discrete Mathematics and Its Applications
-                              Kenneth H.Rosen        离散数学及其应用
-
-### OS & Language & Engineering ###
-* The C Programming Language  Brian W.Kernighan...   C程序设计语言
-* Think in C++                Bruce Echel...         C++编程思想
-* Understanding the Linux Kernel
-                              Daniel P. Bovet...
-* Linux Kernel Development    Robert Love            Linux内核设计与实现
-* Design Pattern              Erich Gamma...         设计模式
-* Domain-Specific Languages   Martin Flower          领域特定语言
-
-### Database ###
-* Transaction Processing: Concepts and Techniques
-                              Jim Gray, Andreas Reuter
-* Transactional Information Systems: Theory, Algorithms,
-     and the Practice of Concurrency Control and Recovery 
-                              Gerhard Weikum, Gottfried Vossen
-* Database Management Systems Raghu Ramakrishnan...
+  NAME                        |AUTHOR                |CN_NAME 
+------------------------------|----------------------|--------------------------
+__*CS Basic*__ | |
+* Code: The Hidden Language of Computer Hardware and Software | Charles Petzold | 编码:隐匿在计算机软硬件背后的语言   
+* Computer Networks 4th       |Andrew S.Tanenbaum    |计算机网络
+* Operation System Concepts   |Peter Baer Galvin     |操作系统概念               
+* Structure and Interpretation of Computer Programs | Harold Abelson... | 计算机程序的构造与解释
+* Compilers                   |Alfred V.AHO          |编译原理
+* Introduction to Algorithms  |Thomas H.Cormen...    |算法导论
+* Modern Operating Systems    |Andrew S.Tanenbaum    |现代操作系统
+* Discrete Mathematics and Its Applications | Kenneth H.Rosen | 离散数学及其应用
+__*OS & Language & Engineering*__ | |
+* The C Programming Language  |Brian W.Kernighan...  |C程序设计语言
+* Think in C++                |Bruce Echel...        |C++编程思想
+* Understanding the Linux Kernel | Daniel P. Bovet...
+* Linux Kernel Development    |Robert Love           |Linux内核设计与实现
+* Design Pattern              |Erich Gamma...        |设计模式
+* Domain-Specific Languages   |Martin Flower         |领域特定语言
+__*Database*__ | |
+* Transaction Processing: Concepts and Techniques | Jim Gray, Andreas Reuter
+* Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery | Gerhard Weikum, Gottfried Vossen
+* Database Management Systems | Raghu Ramakrishnan...
 
 ### Security ###
 * Cryptography Engineering    Niels Ferguson
