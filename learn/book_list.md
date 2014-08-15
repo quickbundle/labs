@@ -63,10 +63,10 @@ __*Engineering*__ |
 * The Art of Intrusion        |Kevin Mitnick
 * Modern Cryptography: Theory and Practice |Wenbo Mao|现代密码学理论与实践
 * Data Mining                 |Lan H.Witten...       |数据挖掘
-*                             |周志明               |深入理解Java虚拟机
+*                             |周志明                 |深入理解Java虚拟机
 * Refactoring                 |Martin Flower         |重构
 * Analysis Pattern            |Martin Flower         |分析模式
-*                             |许式伟               |Go语言编程
+*                             |许式伟                 |Go语言编程
 
 ..to be continued...
 --------------------------------------------------------------------------------
