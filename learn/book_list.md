@@ -18,7 +18,7 @@
 # Old School: [1.required] #
   NAME                        |AUTHOR                |CN_NAME 
 ------------------------------|----------------------|--------------------------
-__*CS Basic*__
+__*CS Basic*__ |
 * Code: The Hidden Language of Computer Hardware and Software |Charles Petzold |编码:隐匿在计算机软硬件背后的语言   
 * Computer Networks 4th       |Andrew S.Tanenbaum    |计算机网络
 * Operation System Concepts   |Peter Baer Galvin     |操作系统概念               
@@ -27,20 +27,20 @@ __*CS Basic*__
 * Introduction to Algorithms  |Thomas H.Cormen...    |算法导论
 * Modern Operating Systems    |Andrew S.Tanenbaum    |现代操作系统
 * Discrete Mathematics and Its Applications |Kenneth H.Rosen |离散数学及其应用
-__*OS & Language & Engineering*__
+__*OS & Language & Engineering*__ |
 * The C Programming Language  |Brian W.Kernighan...  |C程序设计语言
 * Think in C++                |Bruce Echel...        |C++编程思想
 * Understanding the Linux Kernel |Daniel P. Bovet...
 * Linux Kernel Development    |Robert Love           |Linux内核设计与实现
 * Design Pattern              |Erich Gamma...        |设计模式
 * Domain-Specific Languages   |Martin Flower         |领域特定语言
-__*Database*__
+__*Database*__ |
 * Transaction Processing: Concepts and Techniques |Jim Gray, Andreas Reuter
 * Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery |Gerhard Weikum, Gottfried Vossen
 * Database Management Systems |Raghu Ramakrishnan...
-__*Security*__
+__*Security*__ |
 * Cryptography Engineering    |Niels Ferguson
-* Phrack
+* Phrack |
 
 ..we came a long way...
 --------------------------------------------------------------------------------
@@ -49,9 +49,9 @@ __*Security*__
 # Old School: [2.optional] #
   NAME                        |AUTHOR                |CN_NAME 
 ------------------------------|----------------------|--------------------------
-__*CS Basic*__
+__*CS Basic*__ |
 * The Art of Computer Programming |Donald E. Knuth   |计算机程序设计艺术
-__*Engineering*__
+__*Engineering*__ |
 * Hacking: The Art of Exploitation, 2nd Edition |Jon Erickson
 * A Bug Hunter’s Diary        |TOBIAS KLEIN
 * HACKING EXPOSED LINUX 3rd edition |Many authors
