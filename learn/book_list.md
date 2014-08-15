@@ -39,7 +39,8 @@ __*Database*__ |
 * Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery |Gerhard Weikum, Gottfried Vossen
 * Database Management Systems |Raghu Ramakrishnan...
 __*Security*__ |
-* Cryptography Engineering    |Niels Ferguson
+* Cryptography Engineering    |Niels Ferguson, Bruce Schneier 
+* Security Engineering 2nd    |Ross Anderson
 * Phrack |
 
 ..we came a long way...
@@ -52,13 +53,13 @@ __*Security*__ |
 __*CS Basic*__ |
 * The Art of Computer Programming |Donald E. Knuth   |计算机程序设计艺术
 __*Engineering*__ |
-* Hacking: The Art of Exploitation, 2nd Edition |Jon Erickson
+* Hacking: The Art of Exploitation 2nd|Jon Erickson
 * A Bug Hunter’s Diary        |TOBIAS KLEIN
-* HACKING EXPOSED LINUX 3rd edition |Many authors
-* The Shellcoders Handbook 2nd edition |A, H, L, R
+* HACKING EXPOSED LINUX 3rd   |Many authors
+* The Shellcoders Handbook 2nd |A, H, L, R
 * Secure Programming for Linux and Unix HOWTO |David A. Wheeler
-* Security Engineering 2nd edition |Ross J. Anderson
-* APPLIED CRYPTOGRAPHY 2nd edition |Bruce Schneier
+* Security Engineering 2nd    |Ross J. Anderson
+* APPLIED CRYPTOGRAPHY 2nd    |Bruce Schneier
 * The Art of Intrusion        |Kevin Mitnick
 * Modern Cryptography: Theory and Practice |Wenbo Mao |现代密码学理论与实践
 * Data Mining                 |Lan H.Witten...       |数据挖掘
