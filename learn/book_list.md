@@ -17,7 +17,8 @@
 
 # Old School: [1.required] #
   NAME            |            AUTHOR          |       CN_NAME
-### CS Basic ###
+----------------------------|----------------------|----------------------------
+### CS Basic ### | |
 * Code: The Hidden Language of Computer Hardware and Software | Charles Petzold | 编码:隐匿在计算机软硬件背后的语言   
 * Computer Networks 4th       Andrew S.Tanenbaum     计算机网络
 * Operation System Concepts   Peter Baer Galvin      操作系统概念               
